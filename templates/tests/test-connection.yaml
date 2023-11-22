@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "mtlchart.fullname" . }}-test-connection"
+  labels:
+    {{- include "mtlchart.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "mtlchart.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
