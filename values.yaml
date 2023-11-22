@@ -4,7 +4,7 @@
 
 replicaCount: 1
 image:
-  repository: dearteno/mtlapp
+  repository: docker.io/dearteno/mtlapp:c79b95b
   pullPolicy: IfNotPresent
 imagePullSecrets: []
 nameOverride: ""
