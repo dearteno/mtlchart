@@ -5,8 +5,6 @@
 replicaCount: 1
 image:
   repository: dearteno/mtlapp
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: "docker.io/dearteno/mtlapp:b76d6c0"
   pullPolicy: IfNotPresent
 imagePullSecrets: []
 nameOverride: ""
