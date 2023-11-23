@@ -6,7 +6,7 @@ replicaCount: 1
 image:
   repository: dearteno/mtlapp
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "0f9426f"
+  tag: "0f52e2c"
   pullPolicy: IfNotPresent
 imagePullSecrets: []
 nameOverride: ""
